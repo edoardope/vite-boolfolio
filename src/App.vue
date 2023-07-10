@@ -1,11 +1,11 @@
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header.vue';
 import { store } from './store.js';
 
 export default {
   name: "App",
   components: {
-
+    Header,
   },
   data() {
     return {
@@ -24,6 +24,8 @@ export default {
 </script>
 
 <template>
+  <Header />
+  <Home />
   <router-view></router-view>
 </template>
 
